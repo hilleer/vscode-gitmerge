@@ -23,7 +23,7 @@ export async function activate() {
 
 function registerCommand(activationPath: string, activationName: string, args: any): Disposable {
 	const activation = require(activationPath);
-	return commands.registerCommand(`extension.${activationName}`, () => activation.main(args));
+	return commands.registerCommand(`extension.gitmerge.${activationName}`, () => activation.main(args));
 }
 
 // this method is called when your extension is deactivated

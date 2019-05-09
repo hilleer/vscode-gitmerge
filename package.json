@@ -1,8 +1,8 @@
 {
-    "name": "vscode-tcmerge",
-    "displayName": "vscode-tcmerge",
+    "name": "gitmerge",
+    "displayName": "Gitmerge",
     "description": "easily integrate git and github with vscode",
-    "version": "1.0.1",
+    "version": "1.0.0",
     "engines": {
         "vscode": "^1.31.0"
     },
@@ -10,10 +10,10 @@
         "Other"
     ],
     "activationEvents": [
-        "onCommand:extension.commitAndPush",
-        "onCommand:extension.createPullRequest",
-        "onCommand:extension.createReadyBranch",
-        "onCommand:extension.accessToken",
+        "onCommand:extension.gitmerge.commitAndPush",
+        "onCommand:extension.gitmerge.createPullRequest",
+        "onCommand:extension.gitmerge.createReadyBranch",
+        "onCommand:extension.gitmerge.accessToken",
         "workspaceContains:.git"
     ],
     "main": "./out/extension",
@@ -21,27 +21,27 @@
     "contributes": {
         "configuration": [
             {
-                "title": "vscode-tcmerge configuration",
-                "description": "configuration for vscode-tcmerge extension",
+                "title": "Gitmerge configuration",
+                "description": "configuration for Gitmerge extension",
                 "properties": {}
             }
         ],
         "commands": [
             {
-                "command": "extension.commitAndPush",
-                "title": "tcmerge: Commit and push"
+                "command": "extension.gitmerge.commitAndPush",
+                "title": "gitmerge: Commit and push"
             },
             {
-                "command": "extension.createPullRequest",
-                "title": "tcmerge: Create pull request"
+                "command": "extension.gitmerge.createPullRequest",
+                "title": "gitmerge: Create pull request"
             },
             {
-                "command": "extension.createReadyBranch",
-                "title": "tcmerge: Create ready branch"
+                "command": "extension.gitmerge.createReadyBranch",
+                "title": "gitmerge: Create ready branch"
             },
             {
-                "command": "extension.accessToken",
-                "title": "tcmerge: Github access token"
+                "command": "extension.gitmerge.accessToken",
+                "title": "gitmerge: Github access token"
             }
         ]
     },
@@ -66,11 +66,11 @@
         "node-fetch": "2.2.1"
     },
     "repository": {
-        "url": "https://github.com/hilleer/vscode-tcmerge",
+        "url": "https://github.com/hilleer/vscode-gitmerge",
         "type": "git"
     },
     "bugs": {
-        "url": "https://github.com/hilleer/vscode-tcmerge/issues/new"
+        "url": "https://github.com/hilleer/vscode-gitmerge/issues/new"
     },
     "keywords": [
         "Git",

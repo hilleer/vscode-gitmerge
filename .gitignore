@@ -1,6 +1,4 @@
 out
 node_modules
-.vscode-test/
 *.vsix
-accessToken.txt
 .vscode/settings.json

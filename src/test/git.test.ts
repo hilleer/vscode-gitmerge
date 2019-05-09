@@ -36,7 +36,7 @@ suite('git', () => {
 		});
 	});
 	suite('getGitDetails()', () => {
-		suiteSetup(() => callStub('origin  git@github.com:hilleer/vscode-git.git'));
+		suiteSetup(() => callStub('origin git@github.com:hilleer/vscode-git.git'));
 		suiteTeardown(() => stub.reset());
 		suite('when called', () => {
 			test('should call git with expected args', async () => {

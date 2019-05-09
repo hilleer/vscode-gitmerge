@@ -8,7 +8,7 @@ const writeFileAsync = promisify(writeFile);
 const unlinkAsync = promisify(unlink);
 const mkdirAsync = promisify(mkdir);
 
-const ACCESS_TOKEN_DIR = path.join(os.homedir(), '.vscode-tcmerge');
+const ACCESS_TOKEN_DIR = path.join(os.homedir(), '.vscode-gitmerge');
 const ACCESS_TOKEN_FILENAME = 'access_token.txt';
 
 export class AccessToken {
